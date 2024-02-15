@@ -5,9 +5,11 @@ body{
     min-height: 100vh;
 }
 
-.continer{
+.container{
     flex: 1;
 }
+
+
 /* Navbar */
 
 .navbar {
