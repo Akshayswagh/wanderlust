@@ -123,14 +123,14 @@
 
 <script>
   let taxSwitch = document.getElementById("flexSwitchCheckDefault");
-  taxSwitch.addEventListner("click", () => {
-    let taxInfo = document.getElementsByClassName("tax-info");
-    for (info of taxInfo) {
-      if (info.style.display != "inline") {
-        info.style.display = "inline";
+  taxSwitch.addEventListener("click", () => {
+  let taxInfo = document.querySelectorAll(".tax-info");
+    taxInfo.forEach((listing) => {
+      if (listing.style.display == "inline") {
+        listing.style.display = "none";
       } else {
-        info.style.display = "none";
+        listing.style.display = "inline";
       }
-    }
+    });
   });
 </script>
