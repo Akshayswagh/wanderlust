@@ -18,18 +18,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/rating.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <%- include("../includes/navbar.ejs") %>
     <div class="container">
-      <%- include("../includes/flash.ejs") %>
-      <%- body %>
+      <%- include("../includes/flash.ejs") %> <%- body %>
     </div>
     <%- include("../includes/footer.ejs") %>
     <script
@@ -38,5 +43,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/script.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
   </body>
 </html>
