@@ -1,0 +1,85 @@
+/* Login page styling */
+
+.login-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.login-page .form-label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.login-page .form-control {
+  margin-bottom: 0.6rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-page .login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff385c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.login-page .login-btn:hover {
+  background-color: #d63253;
+}
+
+@media (min-width: 768px) {
+  /* .login-page {
+      border: 1px solid #b0b0b0;
+    } */
+}
+
+@media only screen and (max-width: 767px) {
+  .login-page {
+    margin-top: 4rem !important; /* Additional margin from the top */
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .login-page {
+    margin: 20px auto;
+    max-width: 370px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .login-page {
+    margin: 20px auto;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .login-page {
+    margin: 10px auto;
+    max-width: 275px;
+  }
+  .login-page h1 {
+    text-align: start;
+  }
+}

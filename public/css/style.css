@@ -25,7 +25,13 @@ body {
   color: #222222 !important;
 }
 
+
+
 /* footer */
+
+.footer {
+  margin-top: 1rem;
+}
 
 f-info-links a {
   text-decoration: none;
@@ -93,6 +99,8 @@ f-info-links a:hover {
   opacity: 0.2;
   background-color: white;
 }
+
+
 /* New page */
 .add-btn {
   background-color: #fe424d !important;
@@ -113,22 +121,32 @@ f-info-links a:hover {
   display: flex;
 }
 
+
+.form-label {
+  font-weight: bold;
+}
+
+.original-img{
+  font-weight: bold;  
+}
+.original-img img{
+  margin-top: 0.3rem;
+}
 /* Map */
 
-#map {
+/* #map {
   height: 400px;
   width: 80vh;
-}
+} */
 
 /*  show page */
 
-#map {
+/* #map {
   border: 2px solid black;
-}
+} */
 
 
 /* Navbar */
-
 .search-btn {
   background-color: #fe424d;
   color: #fff;
@@ -141,6 +159,6 @@ f-info-links a:hover {
   margin-right: 0.5rem;
 }
 .search-inp {
-  border-radius: 25px !important;
+  /* border-radius: 25px !important; */
   padding: 0.5rem 3rem 0.5rem 3rem;
 }

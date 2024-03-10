@@ -1,0 +1,103 @@
+/* Styling for filters */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.filter {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 10px;
+}
+
+.filter i {
+  font-size: 0.8rem;
+}
+
+.filter p {
+  margin: 0;
+}
+
+/* Styling for tax toggle */
+.tax-toggle {
+  margin-top: 4.5rem;
+}
+
+/* Styling for listing cards */
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listing-link {
+  flex: 0 0 30%; /* Adjust as needed */
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.listing-card:hover {
+  transform: scale(1.05);
+}
+
+.listing-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.tax-info {
+  color: #888;
+}
+
+@media (max-width: 992px) {
+  .listing-link {
+    flex: 0 0 calc(50% - 30px); /* Adjust width for two listings per row */
+  }
+  .tax-toggle {
+    margin-top: 0;
+  }
+  .filter i {
+    font-size: 1rem;
+  }
+  .filter p {
+    display: none;
+  }
+
+  .tax-toggle {
+    display: block;
+    margin-top: 2.9rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    width:805;
+  }
+}
+
+@media (max-width: 576px) {
+  .listing-link {
+    flex: 0 0 100%; /*  listings occupy full width on smaller screens */
+  }
+}

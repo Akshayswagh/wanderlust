@@ -1,0 +1,25 @@
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #EDEDED; 
+}
+
+.compass-icon{
+    font-size: 2.5rem;
+    color: #FF385C;
+}
+.search form{
+    display: flex;
+}
+
+
+
+
+  
+ 
