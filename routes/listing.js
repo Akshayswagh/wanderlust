@@ -3,8 +3,8 @@ const router = express.Router();
 const wrapAsync = require("../utils/wrapasync.js");
 const Listing = require("../models/listing.js");
 const { isLoggedIn, isOwner, validateListing } = require("../middleware.js");
-const multer  = require('multer');
-const {storage} = require("../cloudConfig.js");
+const multer = require("multer");
+const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });
 
 const listingController = require("../controllers/listings.js");
@@ -13,7 +13,7 @@ router
   .get(wrapAsync(listingController.index))
   .post(
     isLoggedIn,
-    upload.single('listing[image]'),
+    upload.single("listing[image]"),
     validateListing,
     wrapAsync(listingController.createListing)
   );
@@ -27,15 +27,11 @@ router
   .put(
     isLoggedIn,
     isOwner,
-    upload.single('listing[image]'),
+    upload.single("listing[image]"),
     validateListing,
     wrapAsync(listingController.updateListing)
   )
-  .delete(
-    isLoggedIn,
-    isOwner,
-    wrapAsync(listingController.destroyListing)
-  );
+  .delete(isLoggedIn, isOwner, wrapAsync(listingController.destroyListing));
 
 // edit route
 router.get(
@@ -43,6 +39,6 @@ router.get(
   isLoggedIn,
   isOwner,
   wrapAsync(listingController.editListing)
-)
+);
 
 module.exports = router;

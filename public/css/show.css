@@ -1,17 +1,20 @@
 .show-page {
-  max-width: 600px;
+  max-width: 35vw;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-bottom: 3rem;
 }
 
+.listing-details {
+  width: 100%;
+}
 .title h3 {
   margin-top: 0;
 }
 
 .show-img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -25,6 +28,12 @@
   padding: 3px 0;
 }
 
+.card-body > :nth-child(2),
+.card-body > :nth-child(3),
+.card-body > :nth-child(4),
+.card-body > :nth-child(5) {
+  font-weight: 600;
+}
 .card-text i {
   font-style: italic;
 }
@@ -103,12 +112,11 @@ textarea {
   margin-bottom: 1rem;
 }
 
-
 @media only screen and (max-width: 412px) {
   .Delete_review {
     margin-bottom: 0;
   }
-  .Review .card-title{
+  .Review .card-title {
     font-weight: 600;
     font-size: 1rem;
   }

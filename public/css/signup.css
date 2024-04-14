@@ -63,7 +63,7 @@ h2 {
     width: 100%;
     display: block;
     margin: 4rem auto 0;
-    }
+  }
   .horizontal-line {
     display: block;
     border-top: 1px solid #b0b0b0;
@@ -76,7 +76,7 @@ h2 {
     margin: 30px auto;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 3rem ; 
+    margin-top: 3rem;
   }
   .signup-btn {
     width: 100%;
@@ -96,7 +96,6 @@ h2 {
     margin: 20px auto;
     max-width: 300px;
     margin-top: 3rem;
-
   }
 }
 
@@ -104,7 +103,7 @@ h2 {
   .signupForm {
     margin: 10px auto;
     max-width: 275px;
-    margin-top: 3rem ; 
+    margin-top: 3rem;
   }
   h2 {
     text-align: start;

@@ -1,103 +1,98 @@
-/* Styling for filters */
+.main {
+  max-width: 90vw;
+  margin: auto;
+}
+.index-page-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
 #filters {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .filter {
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 2.5rem;
-  padding-top: 10px;
-}
-
-.filter i {
-  font-size: 0.8rem;
-}
-
-.filter p {
-  margin: 0;
-}
-
-/* Styling for tax toggle */
-.tax-toggle {
-  margin-top: 4.5rem;
-}
-
-/* Styling for listing cards */
-.listings {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.listing-link {
-  flex: 0 0 30%; /* Adjust as needed */
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: inherit;
+.listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1rem;
+  padding-bottom: 5px;
+}
+.index-page-card .content-div .listing-name {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.listing-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+.index-page-card .content-div {
+  margin-left: 1.2rem;
 }
 
-.listing-card:hover {
-  transform: scale(1.05);
-}
-
-.listing-card img {
+.index-page-card {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+
+.index-page-card-img {
+  display: block;
+  margin: 10px auto;
+  height: 70%;
+  position: relative;
+  width: 90%;
+  border-radius: 1rem;
   object-fit: cover;
 }
 
-.card-body {
-  padding: 15px;
-}
-
-.card-text {
-  font-size: 16px;
-  margin-top: 0;
-}
-
-.tax-info {
-  color: #888;
-}
-
-@media (max-width: 992px) {
-  .listing-link {
-    flex: 0 0 calc(50% - 30px); /* Adjust width for two listings per row */
+@media screen and (max-width: 1000px) {
+  .listings {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .tax-toggle {
-    margin-top: 0;
+  #filters {
+    flex-wrap: wrap;
   }
-  .filter i {
+  .index-page-card .content-div .listing-name {
     font-size: 1rem;
   }
-  .filter p {
+}
+
+@media screen and (max-width: 800px) {
+  .listings {
+    grid-template-columns: 1fr 1fr;
+  }
+  #filters {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .listings {
+    grid-template-columns: 1fr;
+  }
+  #filters {
+    flex-wrap: wrap;
+  }
+  .index-page-card .content-div {
+    margin-left: 2.4rem;
+  }
+  .index-page-card .content-div .listing-name {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .index-page-top {
     display: none;
-  }
-
-  .tax-toggle {
-    display: block;
-    margin-top: 2.9rem;
-  }
-}
-
-@media (max-width: 765px) {
-  .container {
-    width:805;
-  }
-}
-
-@media (max-width: 576px) {
-  .listing-link {
-    flex: 0 0 100%; /*  listings occupy full width on smaller screens */
   }
 }

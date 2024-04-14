@@ -15,11 +15,10 @@
 }
 
 .new_page_form-label {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 0 !important;
-    
-  }
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0 !important;
+}
 
 .form-control {
   width: 100%;
@@ -41,10 +40,10 @@
 
 .invalid-feedback,
 .valid-feedback {
-    position: relative; 
-    font-size: 0.8rem;
-    bottom: 0.8rem; 
-    left: 0;
+  position: relative;
+  font-size: 0.8rem;
+  bottom: 0.8rem;
+  left: 0;
 }
 
 .add_btn {
@@ -60,20 +59,19 @@
 }
 
 button:hover {
-    background-color: #d63253;
+  background-color: #d63253;
 }
 
-
 @media only screen and (max-width: 576px) {
-    .new_page {
-        max-width: 300px;
-        margin: 0 auto;
-      }
+  .new_page {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-    .new_page {
-        max-width: 275px;
-        margin: 0 auto;
-      }
+  .new_page {
+    max-width: 275px;
+    margin: 0 auto;
+  }
 }
