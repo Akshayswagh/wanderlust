@@ -81,9 +81,9 @@
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+/* button[type="submit"]:hover {
   background-color: #0056b3;
-}
+} */
 
 .form-control {
   width: 100%;

@@ -1,55 +1,58 @@
+<head>
+  <link rel="stylesheet" href="/css/navbar.css" />
+</head>
+
 <nav>
-  <div class="nav-left">
-    <div class="container">
-      <a class="compass-icon" href="/listings">
-        <i class="fa-solid fa-compass"></i>
-      </a>
+  <div class="navbar-container">
+    <div class="nav-top">
+      <div class="nav-left">
+        <a class="compass-icon" href="/listings">
+          <i class="fa-solid fa-compass"></i>
+        </a>
+      </div>
+      <div class="navbar-center-content-div">
+        <a href="#" class="btn">Stays</a>
+        <a href="#" class="btn">Experiences</a>
+        <a href="#" class="btn">Online Experiences</a>
+      </div>
+
+      <div class="navbar-right-content-div">
+        <a class="navbar-add-btn btn" href="/listings/new">Add your home</a>
+        <a href="" class="navbar-globe-btn"
+          ><i class="fa-solid fa-globe"></i
+        ></a>
+        <div class="navbar-profile-btn-div">
+          <button class="navbar-profile-btn" id="navbar-profile-btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <div class="navbar-popup" id="navbar-popup">
+            <% if(!currUser){ %>
+            <a class="nav-link" href="/signup">Sign up</a>
+            <a class="nav-link" href="/login">Log in</a>
+            <% } %> <% if(currUser){ %>
+            <a class="nav-link" href="/logout">Log out</a>
+            <% } %>
+            <hr />
+            <a class="nav-link" href="/listings/new">Airbnb your home</a>
+            <a class="nav-link" href="">Help Centre</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="search-bar">
-    <form role="search">
+  <div class="navbar-search-div">
+    <form class="navbar-search-form" role="search">
       <input
-        class="search-inp"
+        class="form-control navbar-search-input"
         type="search"
         placeholder="Search destinations"
       />
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <button class="navbar-search-btn" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </form>
   </div>
-  <div class="nav-right">
-    <div>
-      <a class="nav-link" href="/listings/new">Airbnb your home</a>
-    </div>
-
-    <div>
-      <% if(!currUser) { %>
-      <a class="nav-link" href="/signup"><b>Sign up</b></a>
-      <% } %>
-    </div>
-
-    <div>
-      <% if(!currUser) { %>
-      <a class="nav-link" href="/login"><b>Log in</b></a>
-      <% } %>
-    </div>
-
-    <div>
-      <% if(currUser) { %>
-      <a class="nav-link" href="/logout"><b>Log out</b></a>
-      <% } %>
-    </div>
-  </div>
-  <div class="menu-bar">
-    <i class="fa-solid fa-bars"></i>
-  </div>
 </nav>
+
 <div class="separation"></div>
-<div class="navigation-links">
-  <a class="nav-link" href="/listings/new">Airbnb your home</a>
-  <% if(!currUser) { %>
-  <a class="nav-link" href="/signup"><b>Sign up</b></a>
-  <a class="nav-link" href="/login"><b>Log in</b></a>
-  <% } %> <% if(currUser) { %>
-  <a class="nav-link" href="/logout"><b>Log out</b></a>
-  <% } %>
-</div>

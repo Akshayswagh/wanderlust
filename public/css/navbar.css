@@ -1,119 +1,176 @@
 /* Navbar Style  */
 
-* {
-  margin: 0;
-  padding: 0;
-}
 nav {
-  max-width: 90vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-width: 90%;
   margin: auto;
   padding: 0.5rem 0;
   position: sticky;
-  z-index: 100;
   left: 0;
   z-index: 10;
   background: white;
   top: 0;
 }
 
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
 .nav-left .compass-icon {
   font-size: 2.7rem;
   color: red;
 }
 
-.search {
-  padding-top: 10px;
+/* nav bar centre content div */
+
+.navbar-center-content-div a {
+  border-radius: 35px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.search-bar form input {
-  border-radius: 25px;
-  padding: 5px 110px 9px 24px;
-  border-color: #e1e1e1;
+.navbar-center-content-div a:hover {
+  background-color: #00000009;
 }
-.search-bar .fa-magnifying-glass {
-  position: relative;
-  font-size: 1rem;
-  top: 1px;
-  right: 2.7rem;
-  padding: 0.5rem;
-  background-color: #ff385c;
-  color: white;
-  border-radius: 2.8rem;
+
+.navbar-right-content-div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
-.nav-right {
+
+/* nav right content div */
+
+.navbar-right-content-div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navbar-add-btn {
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+
+.navbar-add-btn:hover {
+  background-color: #00000009;
+}
+
+.navbar-globe-btn {
+  border-radius: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar-globe-btn:hover {
+  background-color: #00000009;
+}
+
+.navbar-profile-btn-div {
+  display: block;
+}
+
+.navbar-profile-btn {
+  width: 80px;
+  height: 48px;
+  border: 1px solid #00000029;
+  background-color: #fff;
+  border-radius: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   gap: 1rem;
-  font-size: 14px;
-  font-weight: 500;
 }
-.navigation-links {
+
+.navbar-profile-btn i {
+  opacity: 0.7;
+}
+
+.navbar-profile-btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 1px 1px 1.2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-popup {
   display: none;
+  padding: 1rem;
+  margin: 1rem auto;
+  right: 1rem;
+  text-align: start;
+  position: absolute;
+  width: 15rem;
+  border-radius: 20px;
+  border: 1px solid #00000020;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 1px 1px 1.2px rgba(0, 0, 0, 0.1);
 }
-.menu-bar {
-  display: none;
+.nav-link {
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 16px;
 }
-.separation {
-  height: 1px;
-  width: 100%;
-  background-color: #ebe1e1;
-  position: fixed;
+.nav-link:hover {
+  background-color: #00000009;
+}
+
+/* Search  */
+
+.navbar-search-div {
+  background-color: transparent;
+  width: 80%;
+  max-width: 60rem;
+  padding: 0.2rem;
+  border-radius: 35px;
+  border: 1px solid #00000029;
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.2);
+  margin: 0rem auto 0.5rem;
+}
+
+.navbar-search-form {
+  display: flex;
+  /* gap: 1rem; */
+}
+
+.navbar-search-btn {
+  color: #fff;
+  background-color: #fe424d;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 0.45rem 0.75rem;
+  border: none;
+  margin: 0.375rem;
+}
+
+.navbar-search-input {
+  border-radius: 25px;
+  border: none;
+  margin: 0.6rem;
 }
 
 /* Responsive Navbar */
 
 @media screen and (max-width: 900px) {
-  .menu-bar {
-    display: block;
-  }
-  .nav-right {
-    display: none;
-  }
   .nav-left .compass-icon {
     font-size: 2.5rem;
-  }
-  .menu-bar .fa-bars {
-    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .search-bar form input {
-    border-radius: 25px;
-    padding: 5px 44px 3px 12px;
-    border-color: #e1e1e1;
-  }
-  .search-bar .fa-magnifying-glass {
-    font-size: 0.8rem;
-    position: relative;
-    top: -2px;
-    right: 2.35rem;
-    padding: 0.5rem;
-    border-radius: 2.8rem;
-  }
   .nav-left .compass-icon {
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 490px) {
-  nav {
-    max-width: 90vw;
-  }
-  .search-bar form input {
-    padding: 3px 2px 3px 10px;
-  }
-  .search-bar .fa-magnifying-glass {
-    font-size: 0.8rem;
-    position: relative;
-    top: -2px;
-    right: 2.1rem;
-    padding: 0.4rem;
-  }
 
+@media screen and (max-width: 490px) {
   .nav-left .compass-icon {
     position: relative;
     right: 8px;
@@ -121,9 +178,30 @@ nav {
   }
 }
 
-@media screen and (max-width: 340px) {
-  .search-bar .fa-magnifying-glass,
-  .search-bar form input {
+@media screen and (max-width: 1056px) {
+  .navbar-center-content-div {
     display: none;
   }
+}
+
+@media screen and (max-width: 743px) {
+  .navbar-container {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-search-div {
+    display: none;
+  }
+
+  .navbar-add-btn,
+  .navbar-globe-btn {
+    display: none;
+  }
+}
+
+.separation {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.191);
+  position: fixed;
 }

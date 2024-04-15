@@ -16,7 +16,9 @@
   align-items: center;
   gap: 1.2rem;
 }
-
+.tax-info {
+  display: none;
+}
 .filter {
   display: flex;
   flex-direction: column;
@@ -52,21 +54,20 @@
   position: relative;
   width: 90%;
   border-radius: 1rem;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .listings {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #filters {
-    flex-wrap: wrap;
-  }
+
   .index-page-card .content-div .listing-name {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 961px) {
+
+@media screen and (max-width: 1020px) {
   .index-page-top {
     display: none;
   }
@@ -76,24 +77,40 @@
   .listings {
     grid-template-columns: 1fr 1fr;
   }
-  #filters {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 600px) {
-  .listings {
-    grid-template-columns: 1fr;
-  }
-  #filters {
-    flex-wrap: wrap;
-  }
   .index-page-card .content-div {
     margin-left: 2.4rem;
   }
   .index-page-card .content-div .listing-name {
     font-size: 1rem;
   }
+  .index-page-card {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .listings {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
-
+@media screen and (max-width: 456px) {
+  .index-page-card .content-div {
+    margin-left: 1.5rem;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 333px) {
+  .index-page-card .content-div {
+    margin-left: 1.2rem;
+  }
+  .index-page-card .content-div .listing-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
