@@ -15,6 +15,7 @@
       <div>
         <label for="title" class="new_page_form-label">Title</label>
         <input
+          id="title"
           name="listing[title]"
           placeholder="Add a catchy title"
           class="form-control"
@@ -22,60 +23,62 @@
           required
         />
         <div class="valid-feedback">Title looks good!</div>
+        <div class="invalid-feedback">Please enter a title</div>
       </div>
 
       <div>
         <label for="description" class="new_page_form-label">Description</label>
         <textarea
+          id="description"
           name="listing[description]"
           required
           class="form-control"
         ></textarea>
-        <div class="invalid-feedback">Please Enter a short Description</div>
+        <div class="invalid-feedback">Please enter a short description</div>
       </div>
 
       <div>
         <label for="image" class="new_page_form-label"
-          >Upload Listing Image
-        </label>
-
+          >Upload Listing Image</label
+        >
         <input
+          id="image"
           name="listing[image]"
           type="file"
           class="form-control"
+        />
+        <div class="invalid-feedback">Upload a listing Image</div>
+      </div>
+
+      <div>
+        <label for="price" class="new_page_form-label">Price</label>
+        <input
+          id="price"
+          name="listing[price]"
+          placeholder="1200"
+          class="form-control"
           required
         />
-      </div>
-      <div>
-        <div class>
-          <label for="price" class="new_page_form-label">Price</label>
-          <input
-            name="listing[price]"
-            placeholder="1200"
-            class="form-control"
-            required
-          />
-          <div class="invalid-feedback">Price should be valid</div>
-        </div>
+        <div class="invalid-feedback">Price should be valid</div>
 
-        <div>
-          <label for="country" class="new_page_form-label">Country</label>
-          <input
-            name="listing[country]"
-            placeholder="India"
-            type="text"
-            class="form-control"
-            required
-          />
-          <div class="invalid-feedback">Country name should be valid</div>
-        </div>
+        <label for="country" class="new_page_form-label">Country</label>
+        <input
+          id="country"
+          name="listing[country]"
+          placeholder="India"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Country name should be valid</div>
       </div>
 
       <div>
         <label for="location" class="new_page_form-label">Location</label>
         <input
+          id="location"
           name="listing[location]"
-          placeholder="Jaipur, Rajsthan"
+          placeholder="Jaipur, Rajasthan"
           type="text"
           class="form-control"
           required
